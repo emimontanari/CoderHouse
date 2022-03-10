@@ -1,23 +1,33 @@
 /*PAGINA DE CONTACTO*/
+$marron:#362706;
+$verde:#464E2E;
+$negro:#2C3333;
+$blanco:#E9E5D6;
 
 .main-ContactUs{
     width: 100%;
-    background: linear-gradient(90deg,#464E2E 0%, #464E2E 30%,#E9E5D6 30%,#E9E5D6 100%);
+    background: linear-gradient(90deg,$verde 0%, $verde 30%,$blanco 30%,$blanco 100%);
 }
 .contactUs{
     width: 100%;
     padding: 40px 100px;
 }
-.contactUs .tittle{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:2rem
+.contactUs{
+    .tittle{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:2rem
+    }
 }
-.contactUs .tittle h2{
-    color: #2C3333;
-    font-weight: 500;
-    font-size:4rem;
+.contactUs{
+    .tittle{
+        h2{
+            color: $negro;
+            font-weight: 500;
+            font-size:4rem;
+        }
+    }
 }
 .form{
     grid-area:form;
@@ -44,11 +54,13 @@
     grid-gap: 20px;
     margin-top: 20px;
 }
-.contact h3{
-    color: #2C3333;
-    font-weight:500;
-    font-size:2rem;
-    margin-bottom: 10px;
+.contact{
+    h3{
+        color: $negro;
+        font-weight:500;
+        font-size:2rem;
+        margin-bottom: 10px;
+    }
 }
 
 /*FORMULARIO*/
@@ -66,47 +78,59 @@
     margin-bottom: 10px;
     width: 50%;
 }
-.formBox .row100 .inputBox{
-    width: 100%;
+.formBox{
+    .row100{
+        .inputBox{
+            width: 100%;
+        }
+    }
 }
-.inputBox span{
-    font-size:1.4rem;
-    color: #362706;
-    margin-top: 10px;
-    margin-bottom:5px;
-    font-weight: 700;
-}
-
-.inputBox input{
-    padding:10px;
-    font-size:1.4rem;
-    outline:none;
-    border: 1px solid #362706;
-}
-
-.inputBox textarea{
-    padding:10px;
-    font-size:1.4rem;
-    outline:none;
-    border: 1px solid #362706;
-    resize: none;
-    min-height:220px;
-    margin-bottom:10px;
-
+.inputBox{
+    span{
+        font-size:1.4rem;
+        color: $marron;
+        margin-top: 10px;
+        margin-bottom:5px;
+        font-weight: 700;
+    }
 }
 
-.inputBox input[type="submit"]{
-    background:#2C3333;
-    color: #fff;
-    font-weight: 600;
-    border: none;
-    font-size:1.5rem;
-    max-width:120px;
-    cursor: pointer;
-    padding: 14px 15px;
+.inputBox{
+    input{
+        padding:10px;
+        font-size:1.4rem;
+        outline:none;
+        border: 1px solid $marron;
+    }
+}
+
+.inputBox{
+    textarea{
+        padding:10px;
+        font-size:1.4rem;
+        outline:none;
+        border: 1px solid $marron;
+        resize: none;
+        min-height:220px;
+        margin-bottom:10px;
+    
+    }
+}
+
+.inputBox{
+    input[type="submit"]{
+        background:$negro;
+        color: #fff;
+        font-weight: 600;
+        border: none;
+        font-size:1.5rem;
+        max-width:120px;
+        cursor: pointer;
+        padding: 14px 15px;
+    }
 }
 .inputBox ::placeholder{
-    color:#362706;
+    color:$marron;
     opacity:1
 }
 
@@ -115,70 +139,108 @@
     font-size:1.4rem;
     background: #ACB992;
 }
-.info h3{
-    color: #362706;
-    font-weight:700;
+.info {
+    h3{
+        color: $marron;
+        font-weight:700;
+    }
 }
 
-.info .infoBox div{
-    display: flex;
-    align-items: center;
-    margin-bottom:10px;
-
+.info{
+    .infoBox{
+        div{
+            display: flex;
+            align-items: center;
+            margin-bottom:10px;
+        
+        }
+    }
 }
-.info .infoBox div span{
-    min-width:40px;
-    height:40px;
-    color:#E9E5D6;
-    background: #464E2E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:1.3em;
-    border-radius: 50%;
-    margin-right: 15px;
-
+.info{
+    .infoBox{
+        div{
+            span{
+                min-width:40px;
+                height:40px;
+                color:$blanco;
+                background: $verde;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size:1.3em;
+                border-radius: 50%;
+                margin-right: 15px;
+            
+            }
+        }
+    }
 }
-.info .infoBox div p{
-    font-size: 1.1em;
-    color:#362706;
-    font-weight: 600;
+.info{
+    .infoBox{
+        div{
+            p{
+                font-size: 1.1em;
+                color:$marron;
+                font-weight: 600;
+            }
+        }
+    }
 }
-.info .infoBox div a{
-    font-size: 1.1em;
-    color:#362706;
-    font-weight: 600;
-    text-decoration: none;
+.info{
+    .infoBox{
+        div{
+            a{
+                font-size: 1.1em;
+                color:$marron;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .redes{
     margin-top:40px;
     display: flex;
 }
-.redes li{
-    list-style: none;
-    margin-right: 15px;
+.redes{
+    li{
+        list-style: none;
+        margin-right: 15px;
+    }
 }
 
-.redes li a{
-    color:#362706;
-    font-size: 2em;
+.redes{
+    li{
+        a{
+            color:$marron;
+            font-size: 2em;
+        }
+    }
 }
-.redes li a:hover{
-    color:#464E2E;
+.redes {
+    li{
+        a{
+            &:hover{
+                color:$verde;
+            }
+        }
+    }
 }
 .map{
     padding: 0;
 }
-.map iframe{
-    width:100%;
-    height:100%;
-    margin-bottom: 100px;
+.map{
+    iframe{
+        width:100%;
+        height:100%;
+        margin-bottom: 100px;
+    }
 }
 
 @media (max-width:991px) { 
     .main-ContactUs{ 
-        background:#464E2E;
+        background:$verde;
     }
     .contactUs{
         padding:20px;
@@ -217,7 +279,7 @@
 .about__cotainer{
         h4 {
         font-weight: bold;
-        color: #E9E5D6;
+        color: $blanco;
         font-size: 26px;
         margin: 0px;
         margin-bottom: 0px;
@@ -227,7 +289,7 @@
 } 
 .about__cotainer{
     p {
-color: #E9E5D6;
+color: $blanco;
 font-size: 14px;
 line-height: 20px;
 max-width: 900px;
@@ -242,7 +304,7 @@ margin: 0 auto;
     list-style: none;
 }
 .about .social_icons li a i{
-    color: #E9E5D6;
+    color: $blanco;
     font-size: 20px;
     margin-right: 15px;
 }

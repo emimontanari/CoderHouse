@@ -1,4 +1,7 @@
-@use '../utilities/colors' as c;
+$marron:#362706;
+$verde:#464E2E;
+$verdeClaro:#ACB992;
+$blanco:#E9E5D6;
 
 /*PAGINA PRODUCTO*/
 .store{
@@ -75,7 +78,7 @@
     font-size: 4rem;
     text-transform: none;
     letter-spacing: 2px;
-    color: #362706;
+    color: $marron;
     font-weight: 900;
     font-style: italic;
 }
@@ -83,7 +86,7 @@
 .store_text{
     font-family: 'Montserrat';
     font-size: 2.2rem;
-    color: #464E2E;
+    color: $verde;
     font-weight: 500;
     text-align: left;
     margin-bottom: 2rem;
@@ -95,7 +98,7 @@
     span{
         font-size: 1.3rem;
         margin-right: 1rem;
-        color: #362706;
+        color: $marron;
         font-weight: 600;
     }
 }
@@ -104,7 +107,7 @@
         text-transform: uppercase;
         font-size: 1.3rem;
         margin-right: 0.7rem;
-        color: #362706;
+        color: $marron;
         font-weight: 600;
     }
 }

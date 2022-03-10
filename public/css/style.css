@@ -1014,7 +1014,7 @@ main {
 .footer_contenedor p {
   text-align: center;
   font-size: 2rem;
-  color: #F5F2E7;
+  color: #E9E5D6;
   margin-bottom: 1rem;
   padding: 1rem; }
 
@@ -1027,7 +1027,7 @@ main {
   margin: 2rem auto; }
 
 .footer_contenedor .email::placeholder {
-  color: #ffffff;
+  color: #E9E5D6;
   padding-left: 10px; }
 
 .footer_contenedor .submit {
@@ -1036,7 +1036,7 @@ main {
   margin-left: 2rem;
   padding: 1rem 3rem 0.7rem 3rem;
   border-radius: 15px;
-  background-color: #F5F2E7;
+  background-color: #E9E5D6;
   color: #2C3333;
   text-transform: uppercase;
   border: none;
@@ -1071,7 +1071,6 @@ img {
   max-width: 100%;
   display: block; }
 
-@use '../utilities/colors' as c;
 /*PAGINA PRODUCTO*/
 .store {
   width: 100%;
