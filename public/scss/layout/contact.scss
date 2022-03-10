@@ -1,0 +1,248 @@
+/*PAGINA DE CONTACTO*/
+
+.main-ContactUs{
+    width: 100%;
+    background: linear-gradient(90deg,#464E2E 0%, #464E2E 30%,#E9E5D6 30%,#E9E5D6 100%);
+}
+.contactUs{
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs .tittle{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem
+}
+.contactUs .tittle h2{
+    color: #2C3333;
+    font-weight: 500;
+    font-size:4rem;
+}
+.form{
+    grid-area:form;
+}
+.info{
+    grid-area:info;
+}
+.map{
+    grid-area:map;
+}
+.contact{
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+.box{
+    position: relative;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contact h3{
+    color: #2C3333;
+    font-weight:500;
+    font-size:2rem;
+    margin-bottom: 10px;
+}
+
+/*FORMULARIO*/
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{ 
+    display: flex;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox span{
+    font-size:1.4rem;
+    color: #362706;
+    margin-top: 10px;
+    margin-bottom:5px;
+    font-weight: 700;
+}
+
+.inputBox input{
+    padding:10px;
+    font-size:1.4rem;
+    outline:none;
+    border: 1px solid #362706;
+}
+
+.inputBox textarea{
+    padding:10px;
+    font-size:1.4rem;
+    outline:none;
+    border: 1px solid #362706;
+    resize: none;
+    min-height:220px;
+    margin-bottom:10px;
+
+}
+
+.inputBox input[type="submit"]{
+    background:#2C3333;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    font-size:1.5rem;
+    max-width:120px;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder{
+    color:#362706;
+    opacity:1
+}
+
+/*INFORMACION*/
+.info{
+    font-size:1.4rem;
+    background: #ACB992;
+}
+.info h3{
+    color: #362706;
+    font-weight:700;
+}
+
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom:10px;
+
+}
+.info .infoBox div span{
+    min-width:40px;
+    height:40px;
+    color:#E9E5D6;
+    background: #464E2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.3em;
+    border-radius: 50%;
+    margin-right: 15px;
+
+}
+.info .infoBox div p{
+    font-size: 1.1em;
+    color:#362706;
+    font-weight: 600;
+}
+.info .infoBox div a{
+    font-size: 1.1em;
+    color:#362706;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.redes{
+    margin-top:40px;
+    display: flex;
+}
+.redes li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.redes li a{
+    color:#362706;
+    font-size: 2em;
+}
+.redes li a:hover{
+    color:#464E2E;
+}
+.map{
+    padding: 0;
+}
+.map iframe{
+    width:100%;
+    height:100%;
+    margin-bottom: 100px;
+}
+
+@media (max-width:991px) { 
+    .main-ContactUs{ 
+        background:#464E2E;
+    }
+    .contactUs{
+        padding:20px;
+    }
+    .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "form"
+        "info"
+        "map"
+        ;
+        grid-gap: 20px;
+        margin-top: 20px;
+        }
+        .map{
+            max-height: 300px;
+        }
+        .formBox .row50{ 
+            display: flex;
+            flex-direction: column;
+        }
+        .inputBox{
+            width: 100%;
+        }
+}
+
+.about{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+}
+.about__cotainer{
+    text-align: center;
+}
+.about__cotainer{
+        h4 {
+        font-weight: bold;
+        color: #E9E5D6;
+        font-size: 26px;
+        margin: 0px;
+        margin-bottom: 0px;
+        margin-bottom: 20px;
+        letter-spacing: 5px;
+        } 
+} 
+.about__cotainer{
+    p {
+color: #E9E5D6;
+font-size: 14px;
+line-height: 20px;
+max-width: 900px;
+margin: 0 auto;
+}
+} 
+.about .social_icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 20px;
+    list-style: none;
+}
+.about .social_icons li a i{
+    color: #E9E5D6;
+    font-size: 20px;
+    margin-right: 15px;
+}

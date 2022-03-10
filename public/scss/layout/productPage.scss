@@ -1,0 +1,156 @@
+@use '../utilities/colors' as c;
+
+/*PAGINA PRODUCTO*/
+.store{
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width:1377px;
+}
+.store_contenedor{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+@media (min-width:768px ) { 
+    .store_contenedor{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 4rem;
+        margin: 0 auto;
+    }
+    .store_contenido{
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    }
+}
+
+.store_img{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width:600px;
+}
+.store_img {
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.store_contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+
+.store_nav {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    text-align: left;
+    font-weight: 700;
+}
+
+.store_nav {
+    a{
+        text-decoration: none;
+        margin-right: .6rem;
+    }
+}
+
+
+.store_title{
+    letter-spacing: 1rem;
+    font-size: 4rem;
+    text-transform: none;
+    letter-spacing: 2px;
+    color: #362706;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.store_text{
+    font-family: 'Montserrat';
+    font-size: 2.2rem;
+    color: #464E2E;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.selector1{
+    margin-bottom: 1rem;
+}
+.selector1 {
+    span{
+        font-size: 1.3rem;
+        margin-right: 1rem;
+        color: #362706;
+        font-weight: 600;
+    }
+}
+.selector2 {
+    span{
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        margin-right: 0.7rem;
+        color: #362706;
+        font-weight: 600;
+    }
+}
+select{
+    width: 20%;
+    height: 30px;
+}
+.btnBuy{
+    margin: 4rem 0;
+}
+
+
+
+
+.especificaciones{
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem;
+}
+.especificaciones_contenedor{
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+}
+ .especificaciones_title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #064635;
+    font-weight: 900;
+    text-align: center;
+}
+.especificaciones_info {
+    h5{
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 1rem 1rem;
+        padding: 1rem;
+        color: #0b353f;
+    }
+}
+.especificaciones_info {
+    p{
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 1rem 1rem;
+        padding: 1rem;
+        color: #2C3333;
+    }
+}
