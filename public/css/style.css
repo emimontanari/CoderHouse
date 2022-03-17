@@ -42,13 +42,13 @@ main {
   text-shadow: 1px 1px 1px #96967a; }
 
 .bannerUno-contenedor-title {
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   color: #464E2E;
+  font-weight: 700;
   margin-top: 7rem;
-  margin-bottom: 0;
-  font-weight: 700; }
+  margin-bottom: 0; }
 
-.bannerUno-contenedor-btn {
+.bannerUno-contenedor-btn, .bannerDos-contenedor-btn {
   margin-top: 1rem;
   font-size: 1.3rem;
   color: #111;
@@ -57,7 +57,11 @@ main {
   border-radius: 20px;
   padding: 1rem 2rem 0.7rem 2rem;
   background-color: transparent;
-  line-height: 25px; }
+  line-height: 25px;
+  transition: all 200ms ease-in-out; }
+  .bannerUno-contenedor-btn:hover, .bannerDos-contenedor-btn:hover {
+    background-color: #464E2E;
+    color: #E9E5D6; }
 
 .bannerDos {
   width: 90%;
@@ -80,8 +84,8 @@ main {
 .bannerDos-contenedor-title {
   font-size: 3.6rem;
   color: #464E2E;
-  margin-bottom: 0;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-bottom: 0; }
 
 .bannerDos-contenedor-subtitle {
   color: #362706;
@@ -89,23 +93,6 @@ main {
   margin-top: 0;
   font-weight: 400;
   margin-right: 3rem; }
-
-.bannerDos-contenedor-btn {
-  margin-top: 1rem;
-  margin-right: 3rem;
-  font-size: 1.3rem;
-  color: #111;
-  font-weight: 600;
-  border: 1px solid #2C3333;
-  border-radius: 20px;
-  padding: 1rem 2rem 0.7rem 2rem;
-  background-color: transparent;
-  line-height: 25px;
-  transition: all 0.200s ease; }
-
-.bannerDos-contenedor-btn:hover {
-  background-color: #464E2E;
-  color: #E9E5D6; }
 
 /*=======================================================
                      PRODUCTOS
@@ -265,10 +252,10 @@ main {
   margin-bottom: 1rem; }
 
 .bases-contenedor-title {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  color: #362706; }
+  font-size: 3.6rem;
+  color: #464E2E;
+  font-weight: 700;
+  margin-bottom: 1rem; }
 
 .bases-contenedor-paragraph {
   font-size: 1.8rem;
@@ -296,10 +283,11 @@ main {
   align-items: center; }
 
 .tecnologias-title {
-  font-size: 3.2rem;
+  font-size: 3.6rem;
+  color: #464E2E;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
-  color: #362706;
   letter-spacing: .5rem; }
 
 .tecnologias-contenedor {
@@ -661,7 +649,6 @@ main {
   padding: 20px;
   gap: 20px; }
 
-/*PAGINA DE CONTACTO*/
 .main-ContactUs {
   width: 100%;
   background: linear-gradient(90deg, #464E2E 0%, #464E2E 30%, #E9E5D6 30%, #E9E5D6 100%); }
@@ -995,7 +982,6 @@ main {
   font-weight: 500;
   text-align: center; }
 
-/*FOOTER*/
 .footer {
   width: 100%;
   padding: 1rem;

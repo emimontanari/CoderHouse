@@ -1,8 +1,3 @@
-$marron:#362706;
-$verde:#464E2E;
-$verdeClaro:#ACB992;
-$blanco:#E9E5D6;
-
 
 main{
     width: 100%;
@@ -50,22 +45,13 @@ main{
     text-shadow: 1px 1px 1px rgba(150, 150, 122, 1);
 }
 .bannerUno-contenedor-title{
-    font-size: 3.8rem;
-   color:$verde ;
+    @include tittle();
     margin-top: 7rem;
     margin-bottom: 0;
-    font-weight: 700;
+
 }
 .bannerUno-contenedor-btn{
-    margin-top: 1rem;
-    font-size: 1.3rem;
-    color: #111;
-    font-weight: 600;
-    border: 1px solid #2C3333;
-    border-radius: 20px;
-    padding: 1rem 2rem 0.7rem 2rem;
-    background-color: transparent;
-    line-height: 25px;
+    @include btn();
 }
 .bannerDos{
     width: 90%;
@@ -86,10 +72,9 @@ main{
     margin: 1rem auto;
 }
 .bannerDos-contenedor-title{
-    font-size: 3.6rem;
-    color: $verde;
+    @include tittle();
     margin-bottom: 0;
-    font-weight: 700;
+    
 }
 .bannerDos-contenedor-subtitle{
     color: $marron;
@@ -99,22 +84,9 @@ main{
     margin-right: 3rem;
 }
 .bannerDos-contenedor-btn{
-margin-top: 1rem;
-margin-right: 3rem;
-font-size: 1.3rem;
-color: #111;
-font-weight: 600;
-border: 1px solid #2C3333;
-border-radius: 20px;
-padding: 1rem 2rem 0.7rem 2rem;
-background-color: transparent;
-line-height: 25px;
-transition: all 0.200s ease;
+    @extend .bannerUno-contenedor-btn
 }
-.bannerDos-contenedor-btn:hover{
-    background-color: $verde;
-    color: $blanco;
-}
+
 /*=======================================================
                      PRODUCTOS
 ========================================================*/
@@ -336,10 +308,9 @@ transition: all 0.200s ease;
     }
 }
 .bases-contenedor-title{
-    font-size: 3rem;
-    font-weight: 500;
+    @include tittle();
     margin-bottom: 1rem;
-    color: $marron;
+    
 }
 .bases-contenedor-paragraph{
     font-size: 1.8rem;
@@ -368,10 +339,10 @@ transition: all 0.200s ease;
 }
 
 .tecnologias-title{
-    font-size: 3.2rem;
+    @include tittle();
     text-align: center;
     margin-bottom: 3rem;
-    color: $marron;
+    
     letter-spacing: .5rem;
 }
 

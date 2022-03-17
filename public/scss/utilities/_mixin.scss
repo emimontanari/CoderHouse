@@ -1,0 +1,22 @@
+@mixin btn {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #111;
+    font-weight: 600;
+    border: 1px solid #2C3333;
+    border-radius: 20px;
+    padding: 1rem 2rem 0.7rem 2rem;
+    background-color: transparent;
+    line-height: 25px;
+    transition: all 200ms ease-in-out;
+    &:hover{
+        background-color: $verde;
+        color: $blanco;
+    }
+}
+
+@mixin tittle {
+    font-size: 3.6rem;
+    color: $verde;
+    font-weight: 700;
+}
